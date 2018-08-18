@@ -1,3 +1,16 @@
 backend:
   name: git-gateway
 media_folder: "images/uploads"
+collections:
+  - name: "posts"
+    label: "Posts"
+    folder: "source/_posts"
+    create: true"
+    slug: "{{slug}}"
+fields:
+  -  {label: "Extends", name: "extends", widget: "hidden", default: "_layouts.post"}
+  -  {label: "Title", name: "title", widget: "string"}
+  -  {label: "Author", name: "author", wiget: "hidden"}
+  -  {label: "Date", name: "date", widget: "datetime"}
+  -  {label: "Content", name: "section", widget: "hidden", default: "content"}
+  -  {label: "Body", name: "body", widget: "markdown"}
