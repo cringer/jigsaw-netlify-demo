@@ -5,7 +5,7 @@ collections:
   - name: "posts"
     label: "Posts"
     folder: "source/_posts"
-    create: true"
+    create: "true"
     slug: "{{slug}}"
     fields:
       -  {label: "Extends", name: "extends", widget: "hidden", default: "_layouts.post"}
