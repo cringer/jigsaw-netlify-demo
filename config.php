@@ -3,5 +3,9 @@
 return [
     'baseUrl' => '',
     'production' => false,
-    'collections' => [],
+    'collections' => [
+        'posts' => [
+            'author' => 'Default Blog Author',
+        ],
+    ],
 ];
